@@ -1,0 +1,182 @@
+/* General Styling */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eafaff; /* Very light blue */
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #5dade2; /* Soft sky blue */
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 0;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Profile Picture */
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 75%;
+  object-fit: cover;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Navigation */
+nav {
+  background-color: #3498db; /* Light navy */
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem;
+  display: block;
+  transition: color 0.3s, border-bottom 0.3s;
+  letter-spacing: 0.5px;
+}
+
+nav ul li a:hover {
+  color: #a2d5f2;
+  border-bottom: 2px solid #a2d5f2;
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+  display: none;
+  background: #3498db;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Section Content */
+.section-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.section-content h2, .section-content h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* Certificates Grid */
+.certificates-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificate-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  font-family: 'Quicksand', sans-serif;
+  transition: transform 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #3498db;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .profile-picture {
+    position: static;
+    display: block;
+    margin: 1rem auto 0 auto;
+  }
+
+  .section-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .certificates-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
